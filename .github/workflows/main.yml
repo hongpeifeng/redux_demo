@@ -11,7 +11,8 @@ jobs:
       - uses: actions/checkout@v1
       - uses: subosito/flutter-action@v1
         with:
-          channel: "master"
+          channel: "stable"
+          version: "1.17.0"
       - run: ls
       - run: flutter config --enable-web && flutter pub get && flutter build web --release
       - run: |
